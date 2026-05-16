@@ -57,7 +57,7 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-20">
       <div className="flex items-center gap-4 mb-10">
         <img
           src="/pfp.png"
