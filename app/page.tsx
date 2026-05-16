@@ -192,7 +192,7 @@ export default function Home() {
             samuel@samuelforrest.co.uk
           </a>
           . I can usually be found online under the username{" "}
-          <span className="text-neutral-100">samuelforrest08</span>.
+          <span className="text-neutral-100">samuelforrest08</span>. The domain samuelforrest.me is also owned by me.
         </p>
       </div>
     </div>
