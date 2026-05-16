@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "id": "hello-world",
+      "date": "May 16, 2026",
+      "title": "Hello World"
+    }
+  ]
+}
