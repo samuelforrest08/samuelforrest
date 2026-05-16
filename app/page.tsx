@@ -53,7 +53,7 @@ export default function Home() {
         <img
           src="/pfp.png"
           alt="Samuel Forrest"
-          className="rounded-full bg-gray-100 w-16 h-16 object-cover shrink-0"
+          className="rounded-full bg-gray-100 w-20 h-20 object-cover shrink-0"
         />
         <div>
           <h1 className="text-xl font-bold">Samuel Forrest</h1>
