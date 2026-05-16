@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
-Sitemap: https://samuelforrest.me/sitemap.xml
+Sitemap: https://samuelforrest.co.uk/sitemap.xml

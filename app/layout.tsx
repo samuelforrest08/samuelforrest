@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Samuel Forrest",
     images: [
       {
-        url: "/images/samuelforrest.webp",
+        url: "/pfp.png",
         width: 1200,
         height: 630,
         alt: "Samuel Forrest",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Samuel Forrest",
     description:
       "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
-    images: ["/images/samuelforrest.webp"],
+    images: ["/pfp.png"],
   },
   robots: {
     index: true,
@@ -116,7 +116,7 @@ export default function RootLayout({
                 "@type": "Person",
                 name: "Samuel Forrest",
                 url: "https://samuelforrest.co.uk",
-                image: "https://samuelforrest.co.uk/images/samuelforrest.webp",
+                image: "https://samuelforrest.me/pfp.png",
                 jobTitle: "Software Developer & A-Level Student",
                 description:
                   "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
@@ -130,10 +130,12 @@ export default function RootLayout({
                   "Private Tutoring",
                 ],
                 sameAs: [
+                  "https://x.com/samuelforrest08",
                   "https://www.linkedin.com/in/samuelforrest08/",
                   "https://github.com/samuelforrest08",
                   "https://www.youtube.com/@samuelforrest08",
                   "https://www.instagram.com/samuelforrest08/",
+                  "https://www.strava.com/athletes/samuelforrest08",
                 ],
                 address: {
                   "@type": "Place",
