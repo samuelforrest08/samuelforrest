@@ -2,22 +2,22 @@
 
 import { Suspense } from "react";
 import Link from "next/link";
-import projectsData from "./projects.json";
+import useSWR from "swr";
+import type { Project } from "./get-projects";
 
-type Project = {
-  id: string;
-  date: string;
-  title: string;
-};
+const fetcher = (url: string) => fetch(url).then(res => res.json());
 
-export function Projects() {
-  const projects: Project[] = projectsData.projects;
+export function Projects({ projects: initialProjects }: { projects: Project[] }) {
+  const { data: projects } = useSWR("/api/projects", fetcher, {
+    fallbackData: initialProjects,
+    refreshInterval: 5000,
+  });
 
   return (
     <Suspense fallback={null}>
       <main className="max-w-2xl m-auto mb-10 text-sm">
         <ul>
-          {projects.map((project, i) => {
+          {projects.map((project: Project, i: number) => {
             const year = getYear(project.date);
             const firstOfYear =
               !projects[i - 1] || getYear(projects[i - 1].date) !== year;
@@ -42,6 +42,9 @@ export function Projects() {
                         <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-all rounded-xl py-0.5 px-1.5">
                           {project.title}
                         </span>
+                      </span>
+                      <span className="text-neutral-500 dark:text-neutral-500 text-xs mt-0.5">
+                        {project.viewsFormatted}
                       </span>
                     </span>
                   </span>

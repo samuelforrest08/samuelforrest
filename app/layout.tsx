@@ -81,7 +81,7 @@ export default function RootLayout({
       </head>
 
       <body className="dark:text-gray-100 max-w-2xl m-auto">
-        <main className="p-6 pt-3 md:pt-6 min-h-screen">
+        <main className="px-6 py-6 md:px-8 md:py-8 min-h-screen">
           <Header />
           {children}
         </main>

@@ -1,4 +1,5 @@
 import { Projects } from "../projects";
+import { getProjects } from "../get-projects";
 
 export const metadata = {
   title: "Projects",
@@ -9,6 +10,7 @@ export const metadata = {
   },
 };
 
-export default function ProjectsPage() {
-  return <Projects />;
+export default async function ProjectsPage() {
+  const projects = await getProjects();
+  return <Projects projects={projects} />;
 }
