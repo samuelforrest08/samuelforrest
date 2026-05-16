@@ -1,7 +1,6 @@
+import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const viewport: Viewport = {

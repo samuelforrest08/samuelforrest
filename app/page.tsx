@@ -77,7 +77,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="p-1.5 rounded-lg hover:bg-neutral-700 transition-colors text-gray-400 hover:text-gray-100"
+                className="p-1.5 rounded-2xl hover:bg-neutral-700 transition-colors text-gray-400 hover:text-gray-100"
               >
                 {icon}
               </a>
@@ -90,7 +90,7 @@ export default function Home() {
         About
       </h2>
 
-      <div className="space-y-3 text-neutral-300 leading-relaxed text-sm text-justify">
+      <div className="space-y-3 text-neutral-300 leading-relaxed text-sm">
         <p>
           I'm a 17-year-old student in the UK completing my A Levels, before
           joining Barclays in August as a Software Developer Degree Apprentice.
@@ -126,7 +126,7 @@ export default function Home() {
           View all my projects on GitHub —{" "}
           <a
             href="https://github.com/samuelforrest08"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -135,7 +135,7 @@ export default function Home() {
           I post frequently on X —{" "}
           <a
             href="https://x.com/samuelforrest08"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -144,7 +144,7 @@ export default function Home() {
           View my LinkedIn profile —{" "}
           <a
             href="https://www.linkedin.com/in/samuelforrest08/"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -153,7 +153,7 @@ export default function Home() {
           Check out my Instagram —{" "}
           <a
             href="https://www.instagram.com/samuelforrest08/"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -162,7 +162,7 @@ export default function Home() {
           View my latest YouTube videos —{" "}
           <a
             href="https://www.youtube.com/@samuelforrest08"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -171,7 +171,7 @@ export default function Home() {
           Give me some kudos on Strava —{" "}
           <a
             href="https://www.strava.com/athletes/samuelforrest08"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             @samuelforrest08
           </a>
@@ -187,12 +187,15 @@ export default function Home() {
           Feel free to contact me at{" "}
           <a
             href="mailto:samuel@daps.org.uk"
-            className="text-neutral-100 hover:underline"
+            className="text-neutral-100 hover:underline underline-offset-4"
           >
             samuel@samuelforrest.co.uk
           </a>
-          . I can usually be found online under the username{" "}
-          <span className="text-neutral-100">samuelforrest08</span>. The domain samuelforrest.me is also owned by me.
+          .
+        </p>
+        <p>
+          I can usually be found online under the username{" "}
+          <span className="text-neutral-100">samuelforrest08</span>.
         </p>
       </div>
     </div>
