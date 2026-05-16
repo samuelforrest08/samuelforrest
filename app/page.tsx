@@ -90,7 +90,7 @@ export default function Home() {
         About
       </h2>
 
-      <div className="space-y-3 text-neutral-300 leading-relaxed text-sm">
+      <div className="space-y-3 text-neutral-300 leading-relaxed text-sm text-justify">
         <p>
           I'm a 17-year-old student in the UK completing my A Levels, before
           joining Barclays in August as a Software Developer Degree Apprentice.
