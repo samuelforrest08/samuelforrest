@@ -44,6 +44,15 @@ const socialLinks = [
       </svg>
     ),
   },
+  {
+    label: "Strava",
+    href: "https://www.strava.com/athletes/samuelforrest08",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" width={14} height={14}>
+        <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Home() {
@@ -57,7 +66,9 @@ export default function Home() {
         />
         <div>
           <h1 className="text-xl font-bold">Samuel Forrest</h1>
-          <p className="text-neutral-400 text-sm mt-0.5">Software Developer & Student</p>
+          <p className="text-neutral-400 text-sm mt-0.5">
+            Software Developer & Student
+          </p>
           <div className="flex items-center gap-1 mt-2">
             {socialLinks.map(({ label, href, icon }) => (
               <a
@@ -81,25 +92,29 @@ export default function Home() {
 
       <div className="space-y-3 text-neutral-300 leading-relaxed text-sm">
         <p>
-          I'm a 17-year-old student in the UK completing my A Levels, before joining Barclays in
-          August as a Software Developer Degree Apprentice.
+          I'm a 17-year-old student in the UK completing my A Levels, before
+          joining Barclays in August as a Software Developer Degree Apprentice.
         </p>
         <p>
-          My main interest is software development, especially building fast, well-designed apps
-          that run in the browser. My core tech stack is Next.js, Tailwind, Supabase and TypeScript,
-          and I use AI tools such as Claude Code to speed up development.
+          My main interest is software development, especially building fast,
+          well-designed apps that run in the browser. My core tech stack is
+          Next.js, Tailwind, Supabase and TypeScript, and I use AI tools such as
+          Claude Code to speed up development.
         </p>
         <p>
-          Key achievements include strong GCSE results of 9999999987, an A* in the EPQ, and work
-          experience at British Airways, AAIB and HUDJO. I've also completed freelance web
-          development projects, done tutoring, volunteered in the community, and worked as CTO of
-          Apprentadream.
+          Key achievements include strong GCSE results of 9999999987, an A* in
+          the EPQ, and work experience at British Airways, AAIB and HUDJO. I've
+          also completed freelance web development projects, done tutoring,
+          volunteered in the community, and worked as CTO of Apprentadream.
         </p>
         <p>
-          Outside of work I'm entrepreneurial by nature — I own over 10 domain names and am
-          currently building a startup, aiming to launch by September 2026.
+          Outside of work I'm entrepreneurial by nature — I own over 10 domain
+          names and am currently building a startup, aiming to launch by
+          September 2026.
         </p>
-        <p>In my free time I enjoy tennis, chess, watersports and the saxophone.</p>
+        <p>
+          In my free time I enjoy tennis, chess, watersports and the saxophone.
+        </p>
       </div>
 
       <h2 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mt-10 mb-4">
@@ -109,13 +124,19 @@ export default function Home() {
       <ul className="space-y-2 text-sm text-neutral-300">
         <li>
           View all my projects on GitHub —{" "}
-          <a href="https://github.com/samuelforrest08" className="text-neutral-100 hover:underline">
+          <a
+            href="https://github.com/samuelforrest08"
+            className="text-neutral-100 hover:underline"
+          >
             @samuelforrest08
           </a>
         </li>
         <li>
           I post frequently on X —{" "}
-          <a href="https://x.com/samuelforrest08" className="text-neutral-100 hover:underline">
+          <a
+            href="https://x.com/samuelforrest08"
+            className="text-neutral-100 hover:underline"
+          >
             @samuelforrest08
           </a>
         </li>
@@ -146,6 +167,15 @@ export default function Home() {
             @samuelforrest08
           </a>
         </li>
+        <li>
+          Give me some kudos on Strava —{" "}
+          <a
+            href="https://www.strava.com/athletes/samuelforrest08"
+            className="text-neutral-100 hover:underline"
+          >
+            @samuelforrest08
+          </a>
+        </li>
       </ul>
 
       <h2 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mt-10 mb-4">
@@ -155,7 +185,10 @@ export default function Home() {
       <div className="space-y-3 text-neutral-300 leading-relaxed text-sm">
         <p>
           Feel free to contact me at{" "}
-          <a href="mailto:samuel@daps.org.uk" className="text-neutral-100 hover:underline">
+          <a
+            href="mailto:samuel@daps.org.uk"
+            className="text-neutral-100 hover:underline"
+          >
             samuel@samuelforrest.co.uk
           </a>
           . I can usually be found online under the username{" "}
