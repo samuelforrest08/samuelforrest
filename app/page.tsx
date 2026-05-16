@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-4">
+      <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-4">
         About
       </h2>
 
@@ -117,7 +117,7 @@ export default function Home() {
         </p>
       </div>
 
-      <h2 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mt-10 mb-4">
+      <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mt-10 mb-4">
         Social Media
       </h2>
 
@@ -178,7 +178,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mt-10 mb-4">
+      <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mt-10 mb-4">
         Contact
       </h2>
 
