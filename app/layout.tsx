@@ -17,23 +17,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Guillermo Rauch's blog",
+  title: {
+    default: "Samuel Forrest",
+    template: "%s | Samuel Forrest",
+  },
   description:
-    "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "Samuel Forrest — software developer, A Level student in the UK, incoming Software Developer Degree Apprentice at Barclays.",
   openGraph: {
-    title: "Guillermo Rauchg's blog",
+    title: "Samuel Forrest",
     description:
-      "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
-    url: "https://rauchg.com",
-    siteName: "Guillermo Rauchg's blog",
+      "Samuel Forrest — software developer, A Level student in the UK, incoming Software Developer Degree Apprentice at Barclays.",
+    url: "https://samuelforrest.me",
+    siteName: "Samuel Forrest",
     images: ["/opengraph-image"],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rauchg",
-    creator: "@rauchg",
+    creator: "@samuelforrest",
   },
-  metadataBase: new URL("https://rauchg.com"),
+  metadataBase: new URL("https://samuelforrest.me"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport = {
@@ -48,13 +54,28 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${geistMono.variable} ${inter.className} antialiased`}
+      className={`${inter.variable} ${geistMono.variable} ${inter.className} antialiased dark`}
       suppressHydrationWarning={true}
     >
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `(${doge.toString()})();`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Samuel Forrest",
+              url: "https://samuelforrest.me",
+              jobTitle: "Software Developer Degree Apprentice",
+              worksFor: { "@type": "Organization", name: "Barclays" },
+              knowsAbout: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Web Development"],
+              sameAs: ["https://linkedin.com/in/#", "https://github.com/#", "https://youtube.com/@#", "https://instagram.com/#"],
+            }),
           }}
         />
       </head>
