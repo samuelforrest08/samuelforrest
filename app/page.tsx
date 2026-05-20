@@ -93,7 +93,7 @@ export default function Home() {
         </p>
         <p>
           My main interest is software development, especially building fast,
-          well-designed apps that run in the browser. My core tech stack is
+          well-designed apps that run in the browser. My core tech stack is React, Vite,
           Next.js, Tailwind, Supabase and TypeScript, and I use AI tools such as
           Claude Code to speed up development.
         </p>
