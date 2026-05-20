@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -162,7 +161,6 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      <GoogleAnalytics gaId="G-PQ9CV0Y4G2" />
     </html>
   );
 }
