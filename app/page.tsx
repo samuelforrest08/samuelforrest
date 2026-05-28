@@ -111,10 +111,10 @@ export default function Home() {
         <p>
           Feel free to contact me at{" "}
           <a
-            href="mailto:samuel@samuelforrest.co.uk"
+            href="mailto:samuelforrest08@icloud.com"
             className="text-neutral-100 hover:underline underline-offset-4"
           >
-            samuel@samuelforrest.co.uk
+            samuelforrest08@icloud.com
           </a>
           .
         </p>
